@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Register as a member or volunteer." />
+    <title>Join the club</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <a class="logo" href="index.html">Campus Connect</a>
+      <nav aria-label="Main">
+        <a href="index.html">Home</a><a href="about.html">About</a
+        ><a href="registration.html" aria-current="page">Registration</a
+        ><a href="contact.html">Contact</a>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h1>Join Campus Connect</h1>
+        <form action="#" method="post" enctype="multipart/form-data">
+          <fieldset>
+            <legend>Student registration</legend>
+            <label for="name">Full name</label
+            ><input
+              id="name"
+              name="name"
+              type="text"
+              required
+              autocomplete="name"
+            />
+            <label for="email">College email</label
+            ><input
+              id="email"
+              name="email"
+              type="email"
+              required
+              autocomplete="email"
+            />
+            <label for="pw">Password (8+ characters)</label
+            ><input
+              id="pw"
+              name="pw"
+              type="password"
+              minlength="8"
+              required
+              autocomplete="new-password"
+            />
+            <label for="year">Year of study</label
+            ><input
+              id="year"
+              name="year"
+              type="number"
+              min="1"
+              max="5"
+              required
+            />
+            <label for="dob">Date of birth</label
+            ><input id="dob" name="dob" type="date" />
+            <label for="phone">Phone number</label
+            ><input id="phone" name="phone" type="tel" autocomplete="tel" />
+            <label for="site">Portfolio or GitHub URL</label
+            ><input
+              id="site"
+              name="site"
+              type="url"
+              placeholder="https://github.com/you"
+            />
+            <label for="branch">Branch</label
+            ><select id="branch" name="branch">
+              <option>Computer Science</option>
+              <option>Electronics</option>
+              <option>Mechanical</option>
+              <option>Other</option>
+            </select>
+            <p id="lvl">Experience level</p>
+            <div role="radiogroup" aria-labelledby="lvl" class="row">
+              <label
+                ><input type="radio" name="level" value="beginner" checked />
+                Beginner</label
+              >
+              <label
+                ><input type="radio" name="level" value="some" /> Some
+                experience</label
+              >
+              <label
+                ><input type="radio" name="level" value="adv" /> Advanced</label
+              >
+            </div>
+            <p id="int">Interests</p>
+            <div role="group" aria-labelledby="int" class="row">
+              <label
+                ><input type="checkbox" name="int" value="web" /> Web</label
+              >
+              <label
+                ><input type="checkbox" name="int" value="design" />
+                Design</label
+              >
+              <label
+                ><input type="checkbox" name="int" value="oss" /> Open
+                source</label
+              >
+            </div>
+            <label for="why">Why do you want to join?</label
+            ><textarea id="why" name="why" rows="4"></textarea>
+            <button class="btn" type="submit">Register</button>
+          </fieldset>
+        </form>
+        <form action="#" method="post" enctype="multipart/form-data">
+          <fieldset>
+            <legend>Volunteer application</legend>
+            <label for="vname">Full name</label
+            ><input id="vname" name="vname" type="text" required />
+            <label for="slot">Preferred start time</label
+            ><input id="slot" name="slot" type="time" />
+            <label for="cv">Upload your resume</label
+            ><input id="cv" name="cv" type="file" accept=".pdf,.doc,.docx" />
+            <button class="btn" type="submit">Apply to volunteer</button>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+    <footer><p>&copy; 2026 Campus Connect College Club</p></footer>
+  </body>
+</html>

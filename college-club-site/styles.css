@@ -1,0 +1,218 @@
+:root {
+  --sun: #C8792C;
+  --paper: #5B4632;
+  --tint: #ead19b;
+  --line: #c9cdef;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font:
+    1rem/1.6 "Segoe UI",
+    Helvetica,
+    Arial,
+    sans-serif;
+  color: var(--ink);
+  background: var(--paper);
+}
+header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 5%;
+  background: var(--paper);
+}
+.logo {
+  color: #fff;
+  font-weight: 800;
+  font-size: 1.25rem;
+  text-decoration: none;
+}
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+}
+nav a:hover {
+  background: rgba(255, 255, 255, 0.18);
+}
+nav a[aria-current="page"] {
+  background: var(--sun);
+  color: var(--ink);
+  font-weight: 700;
+}
+main {
+  max-width: 56rem;
+  margin: 0 auto;
+  padding: 2rem 5% 3rem;
+}
+section {
+  margin-bottom: 2.5rem;
+}
+h1 {
+  font-size: clamp(1.9rem, 5vw, 3rem);
+  line-height: 1.15;
+  margin: 0 0 1rem;
+  background: linear-gradient(90deg, var(--sun), var(--golden sunshine impact));
+}
+h2 {
+  font-size: 1.3rem;
+  margin: 0 0 0.5rem;
+}
+p {
+  max-width: 65ch;
+}
+.hero {
+  padding: 2.5rem 0 1rem;
+}
+.btn {
+  display: inline-block;
+  background: linear-gradient(#ff9800, #ff4336);
+  color: #fff;
+  border: 0;
+  padding: 0.7rem 1.3rem;
+  border-radius: 8px;
+  font: inherit;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+}
+input,textarea{color:red;}
+.btn:hover {
+  background: #1f2fb0;
+}
+.btn.alt {
+  background: var(--sun);
+  color: var(--ink);
+}
+.btn.alt:hover {
+  background: #f2c21f;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 1rem;
+}
+.grid article {
+  background: var(--tint);
+  border-left: 5px solid var(--golden sunshine impact);
+  padding: 1rem 1.2rem;
+  border-radius: 0 8px 8px 0;
+}
+.scroll {
+  overflow-x: auto;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+}
+caption {
+  text-align: left;
+  font-weight: 700;
+  padding: 0.5rem 0;
+}
+th,
+td {
+  padding: 0.7rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--line);
+}
+thead th {
+  background: var(--sun);
+  color: #fff;
+}
+tfoot td {
+  font-weight: 700;
+  background: var(--tint);
+}
+form {
+  margin-bottom: 2rem;
+  padding-top: 3rem;
+}
+fieldset {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--tint);
+  padding: 1.2rem 1.5rem;
+}
+legend {
+  font-weight: 800;
+  padding: 0 0.5rem;
+}
+fieldset > label,
+fieldset > p {
+  display: block;
+  margin: 1rem 0 0.3rem;
+  font-weight: 600;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="date"],
+input[type="tel"],
+input[type="url"],
+input[type="time"],
+input[type="file"],
+select,
+textarea {
+  width: 100%;
+  max-width: 32rem;
+  padding: 0.6rem;
+  border: 1px solid #8b90c9;
+  border-radius: 6px;
+  font: inherit;
+  background: #fff;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.2rem;
+}
+.row label {
+  font-weight: 400;
+}
+fieldset .btn {
+  margin-top: 1.2rem;
+}
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid var(--sun);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 5px var(--ink);
+}
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background: var(--ink);
+  color: #fff;
+}
+@media (max-width: 600px) {
+  header {
+    justify-content: center;
+  }
+}
+th{
+  background: var(--amber);
+  color: var(--paper);
+  padding: 0.8rem;
+}
+legend{
+  margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+  
+}
